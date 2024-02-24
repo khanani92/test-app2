@@ -14,7 +14,7 @@ COPY --from=build ["/app/server/target/*-exec.jar", "/app/server/FC-1201-exec.ja
 WORKDIR /app/server
 
 EXPOSE 8080
-CMD [ "java", "-jar","FC-1201-exec.jar"]
+CMD [ "java","--add-exports", "jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED", "-jar","FC-1201-exec.jar"]
 
 
 
