@@ -8,7 +8,7 @@ image:
   repository: registry.docker.wizzdi.com/muddassir-s-workspace/fc-1201
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.0.5"
+  tag: "0.0.6"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -61,6 +61,7 @@ probes:
 env:
   - name: SPRING_DATASOURCE_URL
     value: jdbc:postgresql://fc-1201-postgresql:5432/flexicore
+
 
 
 
