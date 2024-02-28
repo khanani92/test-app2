@@ -6,7 +6,7 @@
 
     <groupId>com.muddassir</groupId>
     <artifactId>fc-1201-runtime</artifactId>
-    <version>0.0.7</version>
+    <version>0.0.8</version>
 
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -320,6 +320,7 @@
                     <plugin>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-maven-plugin</artifactId>
+                        <version>${spring-boot-dependencies.version}</version>
                         <executions>
                             <execution>
                                 <id>repackage</id>
