@@ -1,7 +1,7 @@
 package com.muddassir.runtime.controller;
 
 import com.muddassir.runtime.MyRequest;
-import com.muddassir.runtime.TestFLow;
+import com.muddassir.runtime.TestBFLow;
 import com.muddassir.runtime.security.UserSecurityContext;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 @Tag(name = "item_summary")
 public class item_summary {
 
-  @Autowired private TestFLow testFLow;
+  @Autowired private TestBFLow testBFLow;
 
   @PostMapping("/item_summary/search_by_image")
   @Operation(summary = "searchByImage", description = "")
@@ -26,6 +26,6 @@ public class item_summary {
 
     UserSecurityContext securityContext = (UserSecurityContext) authentication.getPrincipal();
 
-    testFLow.run(ContentType, myRequest, securityContext);
+    testBFLow.run(ContentType, myRequest, securityContext);
   }
 }

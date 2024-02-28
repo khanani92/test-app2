@@ -11,6 +11,8 @@ public class MyRequest {
 
   private List<String> name2;
 
+  private Testobj testobj;
+
   /**
    * @return genre
    */
@@ -56,6 +58,22 @@ public class MyRequest {
    */
   public <T extends MyRequest> T setName2(List<String> name2) {
     this.name2 = name2;
+    return (T) this;
+  }
+
+  /**
+   * @return testobj
+   */
+  public Testobj getTestobj() {
+    return this.testobj;
+  }
+
+  /**
+   * @param testobj testobj to set
+   * @return MyRequest
+   */
+  public <T extends MyRequest> T setTestobj(Testobj testobj) {
+    this.testobj = testobj;
     return (T) this;
   }
 }
