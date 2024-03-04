@@ -4,6 +4,8 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
     <persistence-unit name="primary">
             
+                <class>com.muddassir.runtime.model.ABC</class>
+            
                 <class>com.muddassir.runtime.model.AppUser</class>
             
 
